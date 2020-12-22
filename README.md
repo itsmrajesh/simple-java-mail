@@ -4,9 +4,11 @@ This is a simple java library that helps you to send emails from java.
 
 ## Installation
 
-Just download the required version of jar from this respository and add this .jar files to build path
+Just download the required version of jar from [releases](https://github.com/itsmrajesh/simple-java-mail/releases) and add .jar file to project build path
 
 ## Usage
+
+You need to implement MailAuth interface.
 
 ```java
 package io.github.itsmrajesh.samplemail;
@@ -43,7 +45,7 @@ public class MyMailAuth implements MailAuth {
 ```
 
 
-You need to implement this(MailAuth) interface and invoke following method
+After implmenting MailAuth interface, you need invoke following method MailService.sendMail and pass the all parameters to sendMail method. 
 
 ```java
 
