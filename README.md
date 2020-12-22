@@ -1,6 +1,6 @@
 # simple-java-mail
 
-This is a simple java library which helps you to send emails from java.
+This is a simple java library that helps you to send emails from java.
 
 ## Installation
 
