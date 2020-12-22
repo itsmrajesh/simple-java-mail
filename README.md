@@ -61,24 +61,28 @@ status will be true when your mail sent is successfully.
 
 ```java
 
-public static void main(String[] args) {
+import io.github.itsmrajesh.samplemail.MailAuth;
+
+public class SimpleMailAppTester {
+ public static void main(String[] args) {
 		
-		MailAuth mailAuth = new MyMailAuth();
+  MailAuth mailAuth = new MyMailAuth();
 		
-		String recipientMailAddress = "example@gmail.com";
-		String mailSubject = "Thank You-Simple Mail";
-		String message = "Hello User, <br> <h4>Thanks for using our services.</h4> <br> <br> Thank You, <br> Team Simple Mail.";
+  String recipientMailAddress = "example@gmail.com";
+  String mailSubject = "Thank You-Simple Mail";
+  String message = "Hello User, <br> <h4>Thanks for using our services.</h4> <br> <br> Thank You, <br> Team Simple Mail.";
 		
-		System.out.println("Please wait while we send your mail.");
+  System.out.println("Please wait while we send your mail.");
 		
-		boolean mailStatus = SimpleMailService.sendMail(mailAuth, recipientMailAddress, mailSubject, message);
+  boolean mailStatus = SimpleMailService.sendMail(mailAuth, recipientMailAddress, mailSubject, message);
 		
-		if (mailStatus) {
-			System.out.println("Mail Sent Successfully!");
-		} else {
-			System.out.println("Failed in sending mail.");
-		}
-	}
+  if (mailStatus) {
+	System.out.println("Mail Sent Successfully!");
+  } else {
+	  System.out.println("Failed in sending mail.");
+  }
+ }
+}
 
 ```
 
