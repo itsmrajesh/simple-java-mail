@@ -1,6 +1,9 @@
 # simple-java-mail
 
-This is a simple java library that helps you to send emails from java.
+This is a simple java library that helps you to send emails from your java projects.
+
+
+![Visitor Count](https://profile-counter.glitch.me/{itsmrajesh}/count.svg)
 
 ## Installation
 
