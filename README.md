@@ -64,12 +64,13 @@ status will be true when your mail sent is successfully.
 import io.github.itsmrajesh.samplemail.MailAuth;
 
 public class SimpleMailAppTester {
+
  public static void main(String[] args) {
 		
   MailAuth mailAuth = new MyMailAuth();
 		
   String recipientMailAddress = "example@gmail.com";
-  String mailSubject = "Thank You-Simple Mail";
+  String mailSubject = "Thank You-Simple Mail"; // This is your mail subject
   String message = "Hello User, <br> <h4>Thanks for using our services.</h4> <br> <br> Thank You, <br> Team Simple Mail.";
 		
   System.out.println("Please wait while we send your mail.");
@@ -81,8 +82,10 @@ public class SimpleMailAppTester {
   } else {
 	  System.out.println("Failed in sending mail.");
   }
- }
-}
+  
+ } // End of main method
+ 
+} // End of Class
 
 ```
 
